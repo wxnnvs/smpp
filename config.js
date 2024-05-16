@@ -15,6 +15,7 @@ const default_settings = {
   isbig: true,
   showplanner: true,
   name_override: null,
+  defaultPage: "/?module=Agenda",
 };
 link_element = document.querySelector('link[rel="icon"]')
 if (link_element) {
