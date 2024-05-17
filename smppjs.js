@@ -1,25 +1,6 @@
 //java script komt hier je weet wel
 //ok - ldev
 //oke logis - andere ldev
-//ok (ik begrijp niks van deze code) - wxnnvs
-
-// -------------------------------------
-
-// wxnnvs' code here
-
-var firstLoad = localStorage.getItem("first_load");
-
-if (window.location.href.includes("login")) {
-  localStorage.setItem("first_load", 0);
-} else if (firstLoad == "0") {
-    window.location.href = "/?module=Agenda"; //get_config().defaultPage
-    localStorage.setItem("first_load", 1);
-} else if (firstLoad == "1") {
-    // nothing
-}
-
-
-// jullie shit
 
 const default_theme = {
   base0: "#38313a", base1: "#826882", base2: "#ac85b7", base3: "#c78af0", accent: "#a3a2ec", text: "#ede3e3"
