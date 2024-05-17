@@ -6,10 +6,13 @@
 // wxnnvs' code here
 
 var firstLoad = localStorage.getItem("first_load");
-if(!firstLoad) {
-   window.location.href = get_config().defaultPage;
-    localStorage.setItem("first_load","1");
+if (firstLoad == "0") {
+    window.location.href = get_config().defaultPage;
+    localStorage.setItem("first_load", 1);
+} else if (window.location.href.includes("login")) {
+    localStorage.setItem("first_load", 0);
 }
+
 
 // jullie shit
 
