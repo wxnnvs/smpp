@@ -248,7 +248,7 @@ const popupsettingHTML = `<head>
 </div>
 <h3 class="popuptitles">Homepage</h3>
 <div class="textandbutton">
-<input class="popupinput" id="defaultPage" type="text" placeholder="ex: /?module=Agenda"></input>
+<input class="popupinput" id="defaultPage" type="text" placeholder="ex: /?module=Agenda" style="height:35px !important;width:100% !important;font-size:16px !important;"></input>
 </div>
 <h3 class="popuptitles">Custom wallpaper (optional):</h3>
 <div class="textandbutton">
