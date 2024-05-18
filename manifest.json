@@ -2,8 +2,11 @@
 	"manifest_version": 3,
 	"name": "Smartschool 2",
 	"version": "2.0.0",
-	"description": "Enhance your smartschool experience with themes and more",
+	"description": "A smartschool++ expansion module.",
 	"homepage_url": "https://github.com/wxnnvs/smpp",
+	"action": {
+		"default_icon": "icon.png"
+	  },
 	"content_scripts": [
 		{
 			"matches": [
@@ -17,11 +20,6 @@
 			]
 		}
 	],
-	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
-	},
 	"browser_specific_settings": {
 		"gecko": {
 			"id": "sm2@wxnnvs"
