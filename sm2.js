@@ -8,7 +8,7 @@ var defaultPage = get_config().defaultPage;
 if (window.location.href.includes("login")) {
     localStorage.setItem("first_load", 0);
 } else if (firstLoad == "0") {
-    if (defaultPage != "/") {
+    if (defaultPage != "/" && defaultPage != "" && defaultPage != null) {
         window.location.href = defaultPage;
         localStorage.setItem("first_load", 1);
     }
