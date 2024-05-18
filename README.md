@@ -1,5 +1,5 @@
 # Smartschool Reloaded
- a Smartschool++ clone
+ a Smartschool++ expansion module
 
  ### Added features
  - Redirect to custom path on login
