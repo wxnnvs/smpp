@@ -29,6 +29,20 @@ function load() {
     defaultPage.value = settingsData.defaultPage;
 }
 
+popup = document.getElementById("searchMenu");
+if (popup != null) {
+  popup.addEventListener("change", store)
+  search_button = document.querySelector('.js-btn-search')
+  search_button.innerText = "Settings"
+  search_button.addEventListener("click", function () {
+
+    const popup_settings = document.getElementById("searchMenu");
+    popup_settings.innerHTML = popupsettingHTML
+    document.getElementById('backgroundfilebutton').addEventListener("click", openFileSelector)
+    load()
+  });
+}
+
 // Load default page
 var firstLoad = localStorage.getItem("first_load");
 var defaultPage = get_config().defaultPage;
