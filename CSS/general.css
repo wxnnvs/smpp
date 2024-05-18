@@ -579,13 +579,6 @@ input:checked+.slider:before {
   font: bold;
 }
 
-/* Why doesnt this load? */
-#defaulPage {
-  height: 35px !important;
-  width: 100% !important;
-  font-size: 16px !important;
-}
-
 .popuptitles {
   margin-bottom: 0px !important;
   text-align: center !important;

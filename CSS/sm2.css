@@ -1,0 +1,18 @@
+/* Why doesnt this load? */
+#defaulPage {
+    height: 35px !important;
+    width: 100% !important;
+    font-size: 16px !important;
+}
+
+/* css for a dialog modal */
+#defaultPageHelpDialog {
+    display: none;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
