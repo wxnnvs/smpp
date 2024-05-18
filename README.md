@@ -1,4 +1,4 @@
-# Smartschool 2
+# Smartschool Reloaded
  a Smartschool++ clone
 
  ### Added features
