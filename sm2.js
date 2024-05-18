@@ -15,18 +15,24 @@ async function apply() {
 }
 
 function store() {
-    let previousData = get_config();
     let settingsData = {};
     const defaultPage = document.getElementById("defaultPage").value;
     settingsData.defaultPage = defaultPage;
     console.log(settingsData)
+    setTimeout(() => {
+        set_config(settingsData);
+    }, 50);
     apply();
 }
 
 function load() {
     let settingsData = JSON.parse(window.localStorage.getItem("settingsdata"));
     const defaultPage = document.getElementById("defaultPage");
-    defaultPage.value = settingsData.defaultPage;
+    // wait half a second before continuing
+    localStorage.setItem("first_load", 1);
+    setTimeout(() => {
+        defaultPage.value = settingsData.defaultPage;
+    }, 50);
 }
 
 popup = document.getElementById("searchMenu");
@@ -37,9 +43,8 @@ if (popup != null) {
   search_button.addEventListener("click", function () {
 
     const popup_settings = document.getElementById("searchMenu");
-    popup_settings.innerHTML = popupsettingHTML
-    document.getElementById('backgroundfilebutton').addEventListener("click", openFileSelector)
-    load()
+    popup_settings.innerHTML = popupsettingHTML;
+    load();
   });
 }
 
