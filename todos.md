@@ -1,1 +1,2 @@
-- [ ] Let user choose defaultPage through settings
+- [x] Let user choose defaultPage through settings
+- [ ] Add a defaultPage selector like the theme one with a custom option
