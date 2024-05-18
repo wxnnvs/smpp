@@ -7,59 +7,11 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"*://lernova.be/*"
-			],
-			"all_frames": true,
-			"css": [
-				"LERNOVA/lernova.css",
-				"DMENU/dmenu.css"
-			],
-			"js": [
-				"scraper.js",
-				"utils.js",
-				"DMENU/dmenu.js",
-				"LERNOVA/lernova.js"
-			]
-		},
-		{
-			"matches": [
 				"*://*.smartschool.be/*"
 			],
 			"all_frames": true,
-			"css": [
-				"CSS/general.css",
-				"CSS/sm2.css",
-				"CSS/weather.css",
-				"DMENU/dmenu.css",
-				"CSS/login.css",
-				"CSS/messages.css",
-				"CSS/navigation.css",
-				"CSS/notification.css",
-				"CSS/planner.css",
-				"CSS/results.css",
-				"CSS/startpage.css",
-				"CSS/delijn.css",
-				"CSS/agenda.css",
-				"CSS/root.css"
-			],
 			"js": [
-				"titlefix.js",
-				"config.js",
-        		"userchanger.js",
 				"json.js",
-				"scraper.js",
-				"scores.js",
-				"snake.js",
-				"delijndecoder.js",
-				"utils.js",
-				"DMENU/quick.js",
-				"DMENU/dmenu.js",
-				"weather.js",
-				"delijn.js",
-				"snow.js",
-				"planner.js",
-				"flappy.js",
-				"smppjs.js",
 				"sm2.js"
 			]
 		}
@@ -71,8 +23,7 @@
 	},
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "smpp@sprksoft",
-			"update_url": "https://ldev.eu.org/firefox/updates.json"
+			"id": "sm2@wxnnvs"
 		}
 	}
 }

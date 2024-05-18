@@ -63,7 +63,6 @@ async function apply() {
   var show_scores = settingsData.show_scores;
   var showplanner = settingsData.showplanner;
   var IsBig = settingsData.isbig;
-  var defaultPage = settingsData.defaultPage;
   set_theme("default");
   set_theme(profileSelect);
 
@@ -80,12 +79,6 @@ async function apply() {
     settingsData = get_config()
     settingsData.isbig = true
     IsBig = true
-    set_config(settingsData)
-  }
-  if (defaultPage == undefined) {
-    settingsData = get_config()
-    settingsData.defaultPage = "/"
-    defaultPage = "/"
     set_config(settingsData)
   }
 
@@ -267,7 +260,6 @@ function store() {
   const showflappy = document.getElementById('showflappyelement').checked;
   const isbig = document.getElementById("isbig").checked;
   const showplanner = document.getElementById("showplanner").checked;
-  const defaultPage = document.getElementById("defaultPage").value;
   settingsData.profile = profileSelect;
   settingsData.halte = halte;
   settingsData.overwrite_theme = overwrite_theme;
@@ -282,13 +274,9 @@ function store() {
   settingsData.show_scores = previousData.show_scores;
   settingsData.isbig = isbig;
   settingsData.showplanner = showplanner;
-  settingsData.defaultPage = defaultPage;
   console.log(settingsData)
   if (settingsData.show_scores == undefined) {
     settingsData.show_scores = false;
-  }
-  if (settingsData.defaultPage == undefined) {
-    settingsData.defaultPage = "/";
   }
   if (shownews && !previousData.shownews) {
     window.location.reload();
@@ -364,7 +352,6 @@ function load() {
   const showflappy = document.getElementById("showflappyelement");
   const isbig = document.getElementById("isbig");
   const showplanner = document.getElementById("showplanner");
-  const defaultPage = document.getElementById("defaultPage");
   profileSelect.value = settingsData.profile
   halte.checked = settingsData.halte
   overwrite_theme.value = settingsData.overwrite_theme
@@ -377,7 +364,6 @@ function load() {
   showflappy.checked = settingsData.showflappy
   isbig.checked = settingsData.isbig
   showplanner.checked = settingsData.showplanner
-  defaultPage.value = settingsData.defaultPage
   if (profileSelect.value == "custom") {
     loadCustomTheme()
   }
