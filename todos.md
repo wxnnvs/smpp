@@ -4,4 +4,4 @@
 - [ ] Add a defaultPage selector like the theme one with a custom option
 
 ## Bugs:
-- [ ] Fix planner opening even when turned off
+- [ ] Some settings from the original extension get overwritten when saving defaultPage
