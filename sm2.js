@@ -45,6 +45,7 @@ function load() {
 if (big == undefined && firstLoad == "0" && !window.location.href.includes("login")) {
     alert("Smartschool++ is required for Smartschool Reloaded to work.\nPlease install it from the Chrome Webstore.");
     localStorage.setItem("first_load", 1);
+    window.open("https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf", "_blank");
 } else if (big == undefined && window.location.href.includes("login")) {
     localStorage.setItem("first_load", 0);
 } else if (big != undefined) {
