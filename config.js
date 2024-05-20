@@ -12,7 +12,7 @@ const default_settings = {
   backgroundlink: "none",
   backgroundfile: "none",
   show_scores: false,
-  isbig: true,
+  isbig: undefined,
   showplanner: true,
   name_override: null,
   defaultPage: "/",
